@@ -1,12 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+// components
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+
+// Helmet
+import {Helmet} from "react-helmet";
 
 function App() {
   return (
-    <div className="App">
-      {/* FaTelegramPlane */}
-      {/* FaCopy */}
-    </div>
+    <>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <title>Cupid Notes | Welcome</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
+      <div className="app">
+        {/* FaTelegramPlane */}
+        {/* FaCopy */}
+        <Navbar />
+        <Home />
+      </div>
+    </>
   );
 }
 
