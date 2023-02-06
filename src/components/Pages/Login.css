@@ -21,7 +21,10 @@
   color: #000000;
   opacity: 0.5;
 }
-.login .form button {
+.login .form .home_button {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
   background: #ff1616;
   border-radius: 28px;
   border: none;
@@ -37,10 +40,6 @@
   cursor: pointer;
   transition: all 0.5s;
   margin-top: 30px;
-}
-.login .form .home_button {
-  color: #ffffff;
-  text-decoration: none;
 }
 .login .link {
   color: #ff1616;

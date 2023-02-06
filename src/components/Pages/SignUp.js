@@ -21,11 +21,9 @@ const SignUp = () => {
         <form action="" className="form">
           <input type="text" placeholder="Choose your Username" required />
           <input type="password" placeholder="Choose your Password" required />
-          <button>
             <Link to="/" className="home_button">
-              Sign Up
+             Sign Up
             </Link>
-          </button>
         </form>
         <p>
           Already have an account?{" "}

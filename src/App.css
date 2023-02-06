@@ -14,7 +14,7 @@
 @media (max-width: 991px) {
   .app {
     width: 50%;
-    margin: 100px auto;
+    margin: 250px auto;
   }
 }
 /* Small Screens */
@@ -22,6 +22,6 @@
   .app {
     width: 80%;
     padding: 15px;
-    margin: 50px auto;
+    margin: 150px auto;
   }
 }
