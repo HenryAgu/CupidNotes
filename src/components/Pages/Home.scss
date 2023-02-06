@@ -36,9 +36,12 @@
     display: flex;
     align-items: center;
     letter-spacing: -0.028em;
+    border: none;
+    outline: none;
   }
   .char_counter {
     text-align: center;
+    margin-top: -30px;
     p {
       font-family: 'Arimo', sans-serif;
       font-style: normal;
@@ -47,5 +50,29 @@
       line-height: 14px;
       color: #000000;
     }
+  }
+  .hint{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: -30px;
+  }
+  .send{
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      background: #ff1616;
+      border-radius: 28px;
+      border: none;
+      outline: none;
+      padding: 15px 0;
+      font-family: "Arimo", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: -0.028em;
+      color: #ffffff;
+      cursor: pointer;
+      transition: all 0.5s;
   }
 }

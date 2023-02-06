@@ -3,6 +3,9 @@ import React from "react";
 // stylesheet
 import "./Home.css";
 
+// NavLink
+import { Link } from "react-router-dom";
+
 // Helmet
 import { Helmet } from "react-helmet";
 
@@ -24,6 +27,12 @@ const Home = () => {
         <div className="char_counter">
           <p>200 characters left</p>
         </div>
+        <div className="hint">
+          <input type="text" placeholder="hint" />
+        </div>
+        <Link to="/" className="send">
+          Spread Love
+        </Link>
       </div>
     </>
   );
