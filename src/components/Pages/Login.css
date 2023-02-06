@@ -1,0 +1,53 @@
+.login p {
+  text-align: center;
+}
+.login .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login .form input {
+  background: rgba(241, 225, 225, 0.53);
+  border: none;
+  outline: none;
+  border-radius: 28px;
+  padding: 18px 15px;
+  font-family: "Arimo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.028em;
+  color: #000000;
+  opacity: 0.5;
+}
+.login .form button {
+  background: #ff1616;
+  border-radius: 28px;
+  border: none;
+  outline: none;
+  padding: 15px 0;
+  font-family: "Arimo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.028em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-top: 30px;
+}
+.login .form .home_button {
+  color: #ffffff;
+  text-decoration: none;
+}
+.login .link {
+  color: #ff1616;
+  text-decoration: none;
+}
+.login .logged_in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
