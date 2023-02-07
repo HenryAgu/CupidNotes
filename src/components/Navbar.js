@@ -15,8 +15,8 @@ const Navbar = () => {
     <nav>
       <img src={Logo} alt="" />
       <div className="text_icons">
-        <FaPen/>
-        <FaTrashAlt/>
+        <FaPen className="inner_text_icon"/>
+        <FaTrashAlt className="inner_text_icon"/>
       </div>
     </nav>
   );

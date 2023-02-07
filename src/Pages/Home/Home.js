@@ -33,7 +33,7 @@ const Home = () => {
         <div className="hint">
           <input type="text" placeholder="hint" />
         </div>
-        <Link to="" className="send">
+        <Link to="/sent" className="send">
           <span>Spread Love</span>
             <FaTelegramPlane className="send_icon"/>
         </Link>

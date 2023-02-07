@@ -1,3 +1,19 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 nav img {
   margin-bottom: 20px;
+}
+nav .text_icons {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+  gap: 20px;
+}
+nav .text_icons .inner_text_icon {
+  background-color: transparent;
+  color: #ff1616;
+  cursor: pointer;
 }

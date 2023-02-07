@@ -6,6 +6,7 @@ import Login from "./Pages/Login/Login";
 import Home from "./Pages/Home/Home";
 import Reset from "./Pages/Reset/Reset";
 import SignUp from "./Pages/SignUp/SignUp";
+import Sent from "./Pages/Sent/Sent";
 
 
 // Router
@@ -31,6 +32,9 @@ function App() {
           </Routes>
           <Routes>
             <Route path="/reset" element={<Reset/>} />
+          </Routes>
+          <Routes>
+            <Route path="/sent" element={<Sent/>}/>
           </Routes>
         </BrowserRouter>
       </div>
