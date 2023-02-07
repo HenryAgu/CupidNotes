@@ -3,6 +3,9 @@ import React from "react";
 // stylesheet
 import "./Home.css";
 
+// react icons
+import { FaTelegramPlane } from "react-icons/fa";
+
 // NavLink
 import { Link } from "react-router-dom";
 
@@ -30,8 +33,9 @@ const Home = () => {
         <div className="hint">
           <input type="text" placeholder="hint" />
         </div>
-        <Link to="/" className="send">
-          Spread Love
+        <Link to="" className="send">
+          <span>Spread Love</span>
+            <FaTelegramPlane className="send_icon"/>
         </Link>
       </div>
     </>

@@ -70,5 +70,12 @@
   letter-spacing: -0.028em;
   color: #ffffff;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: letter-spacing 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.home .send :hover {
+  letter-spacing: 3px;
 }
