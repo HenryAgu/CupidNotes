@@ -2,10 +2,10 @@ import "./App.css";
 
 // components
 import Navbar from "./components/Navbar";
-import Login from "./components/Pages/Login";
-import Home from "./components/Pages/Home";
-import Reset from "./components/Pages/Reset";
-import SignUp from "./components/Pages/SignUp";
+import Login from "./Pages/Login/Login";
+import Home from "./Pages/Home/Home";
+import Reset from "./Pages/Reset/Reset";
+import SignUp from "./Pages/SignUp/SignUp";
 
 
 // Router
