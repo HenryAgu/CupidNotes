@@ -3,20 +3,23 @@ import React from "react";
 // assets
 import Logo from "../assets/Logo.png";
 
+// NavLink
+import { Link } from "react-router-dom";
+
 // stylesheet
 import "./Navbar.css";
 
 // react icons
 import { FaPen } from "react-icons/fa";
-import { FaTrashAlt} from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <nav>
-      <img src={Logo} alt="" />
+      <Link to="/home"><img src={Logo} alt="" /></Link>
       <div className="text_icons">
         <FaPen className="inner_text_icon"/>
-        <FaTrashAlt className="inner_text_icon"/>
+        <FaTimes className="inner_text_icon"/>
       </div>
     </nav>
   );
