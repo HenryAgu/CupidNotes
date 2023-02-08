@@ -37,18 +37,27 @@ function App() {
     setHint(e.target.value);
     setTextIcons(true);
   };
-  
+
   // Spread love button
-  const handleSendMessage = () =>{
+  const handleSendMessage = () => {
     setTextIcons(false);
-  }
+  };
+
+  // hide text icons
+  const cancelHandler = () => {
+    setTextIcons(false);
+  };
   return (
     <>
       <div className="app">
         {/* FaCopy */}
 
         <BrowserRouter>
-          <Navbar textIcons={textIcons} setTextIcons={setTextIcons} />
+          <Navbar
+            textIcons={textIcons}
+            setTextIcons={setTextIcons}
+            cancelHandler={cancelHandler}
+          />
           <Routes>
             <Route exact path="/" element={<Login />} />
           </Routes>

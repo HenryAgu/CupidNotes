@@ -13,7 +13,7 @@ import "./Navbar.css";
 import { FaPen } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 
-const Navbar = ({ textIcons }) => {
+const Navbar = ({ textIcons, cancelHandler }) => {
   return (
     <nav>
       <Link to="/home">
@@ -22,7 +22,7 @@ const Navbar = ({ textIcons }) => {
       {textIcons ? (
         <div className="text_icons">
           <FaPen className="inner_text_icon" />
-          <FaTimes className="inner_text_icon" />
+          <FaTimes className="inner_text_icon" onClick={cancelHandler}/>
         </div>
       ) : null}
     </nav>
