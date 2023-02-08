@@ -13,14 +13,18 @@ import "./Navbar.css";
 import { FaPen } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ textIcons }) => {
   return (
     <nav>
-      <Link to="/home"><img src={Logo} alt="" /></Link>
-      <div className="text_icons">
-        <FaPen className="inner_text_icon"/>
-        <FaTimes className="inner_text_icon"/>
-      </div>
+      <Link to="/home">
+        <img src={Logo} alt="" />
+      </Link>
+      {textIcons ? (
+        <div className="text_icons">
+          <FaPen className="inner_text_icon" />
+          <FaTimes className="inner_text_icon" />
+        </div>
+      ) : null}
     </nav>
   );
 };
