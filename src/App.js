@@ -15,6 +15,10 @@ import Sent from "./Pages/Sent/Sent";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+  // signup page
+  
+
+  // Home page 
   const [textIcons, setTextIcons] = useState(false);
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
