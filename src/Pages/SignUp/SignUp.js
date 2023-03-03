@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 // Helmet
 import { Helmet } from "react-helmet";
 
-const SignUp = () => {
+const SignUp = ({ setEmail, setSignupPassword, register }) => {
   return (
     <>
       <Helmet>
@@ -19,16 +19,30 @@ const SignUp = () => {
       </Helmet>
       <div className="login sign_up">
         <form action="" className="form">
-          <input type="text" placeholder="Choose your Username" required />
-          <input type="password" placeholder="Choose your Password" required />
-            <Link to="/" className="home_button">
-             Sign Up
-            </Link>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            required
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
+          <input
+            type="password"
+            placeholder="Choose your Password"
+            required
+            onChange={(e) => {
+              setSignupPassword(e.target.value);
+            }}
+          />
+          <Link to="/" className="home_button" onClick={register}>
+            Sign Up
+          </Link>
         </form>
         <p>
           Already have an account?{" "}
           <span>
-            <Link to="/" className="sign_up_link">
+            <Link to="/login" className="sign_up_link" >
               Login
             </Link>
           </span>
@@ -36,8 +50,10 @@ const SignUp = () => {
         <div className="policy">
           <input type="checkbox" name="" id="" />
           <p>
-            Yes, I understand and agree to the <span>Wicked Terms of Service, </span>
-            including the <span>User Agreement</span> and <span>Privacy Policy</span>
+            Yes, I understand and agree to the{" "}
+            <span>Wicked Terms of Service, </span>
+            including the <span>User Agreement</span> and{" "}
+            <span>Privacy Policy</span>
           </p>
         </div>
       </div>

@@ -3,6 +3,10 @@ import React, { useState } from "react";
 // stylesheet
 import "./App.css";
 
+// Firebase Auth
+import { auth } from "./config/firebase-config";
+import {createUserWithEmailAndPassword} from "firebase/auth"
+
 // components
 import Navbar from "./components/Navbar";
 import Login from "./Pages/Login/Login";
@@ -16,9 +20,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   // signup page
-  
+  const [email, setEmail] = useState("");
+  const [signupPassword, setSignupPassword] = useState("");
 
-  // Home page 
+  // Home page
   const [textIcons, setTextIcons] = useState(false);
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
@@ -51,6 +56,16 @@ function App() {
   const cancelHandler = () => {
     setTextIcons(false);
   };
+
+  // REGISTER USING FIREBASE--------------
+  const register = async () => {
+    try{
+    const user = await createUserWithEmailAndPassword(auth,email,signupPassword)
+    console.log(user)
+    } catch(error){
+      console.log(error.message);
+    }
+  };
   return (
     <>
       <div className="app">
@@ -82,7 +97,16 @@ function App() {
             />
           </Routes>
           <Routes>
-            <Route path="/sign_up" element={<SignUp />} />
+            <Route
+              path="/sign_up"
+              element={
+                <SignUp
+                  setEmail={setEmail}
+                  setSignupPassword={setSignupPassword}
+                  register={register}
+                />
+              }
+            />
           </Routes>
           <Routes>
             <Route path="/reset" element={<Reset />} />
